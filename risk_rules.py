@@ -1,14 +1,14 @@
-# risk_rules.py
+
 import pandas as pd
 
-# Risk levels and colors
+
 RISK_LEVELS = {
     'High': 'red',
     'Medium': 'orange',
     'Low': 'green'
 }
 
-# --- Enhanced risk evaluation logic ---
+
 HIGH_KEYWORDS = ['personal data', 'sensitive', 'private', 'personally identifiable info', 'without consent', 'no anonymization']
 MEDIUM_KEYWORDS = ['analytics', 'prediction', 'automation', 'forecast', 'evaluate']
 LOW_KEYWORDS = ['dashboard', 'report', 'summary', 'insight']
