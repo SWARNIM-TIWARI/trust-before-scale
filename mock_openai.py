@@ -1,7 +1,7 @@
-# mock_openai.py
+
 import random
 
-# Context-aware mock recommendations
+
 HIGH_RECOMMENDATIONS = [
     "Add human-in-loop review",
     "Implement privacy logging",
