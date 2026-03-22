@@ -1,0 +1,9 @@
+Product,Feature,Description,Severity,Recommendation,Color
+DataSecure CRM,Automated Lead Scoring,Uses AI to rank leads based on predicted conversion probability. No user consent tracking implemented yet.,Low,Enhance explainability dashboard,green
+DataSecure CRM,Customer Chatbot,Provides real-time responses using a large language model. Logs personally identifiable info and conversation history without consent.,High,Implement privacy logging,red
+DataSecure CRM,Sales Forecasting Dashboard,Predicts future revenue trends using historical and external data.,Low,Add clear documentation for feature behavior,green
+DataSecure CRM,Email Automation,Automatically sends marketing emails based on user behavior and analytics.,Medium,Add audit trail for sensitive data,orange
+DataSecure CRM,Automated Lead Scoring,Uses AI to rank leads. Logs personally identifiable info without consent.,High,Add human-in-loop review,red
+DataSecure CRM,Customer Chatbot,Responds to customer queries. Stores conversation history with sensitive data,High,Add human-in-loop review,red
+DataSecure CRM,Sales Forecasting Dashboard,Predicts future revenue trends using historical data and market indicators.,Low,Enhance explainability,green
+DataSecure CRM,Predictive Hiring Tool,"Evaluates candidates based on past performance data, no anonymization applied",Low,Enhance explainability,green

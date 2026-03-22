@@ -1,0 +1,10 @@
+ai_ethics_evaluator/
+│
+├─ app.py
+├─ risk_rules.py
+├─ mock_openai.py
+├─ requirements.txt
+├─ Dockerfile
+├─ README.md
+└─ data/
+   └─ history.csv   # created automatically after first evaluation
