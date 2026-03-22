@@ -1,27 +1,27 @@
-# app.py
+
 import streamlit as st
 import pandas as pd
 import os
 from risk_rules import evaluate_product
 from mock_openai import get_recommendation
 
-# --- Streamlit page config ---
+
 st.set_page_config(page_title="SaaS AI Feature Risk Evaluator", layout="wide")
 
-# --- Title ---
+
 st.title("⚡ SaaS AI Feature Risk Evaluator")
 st.markdown("Evaluate features for High/Medium/Low risk and get offline mock recommendations.")
 
-# --- Initialize or load history (fresh every session) ---
+
 history_df = pd.DataFrame(columns=['Product','Feature','Description','Severity','Color','Recommendation'])
 
-# --- Product input ---
+
 product_name = st.text_input("Enter Product Name", "DataSecure CRM")
 
-# --- Number of features input ---
+
 num_features = st.number_input("Number of Features", min_value=1, max_value=20, value=4, step=1)
 
-# --- Dynamic feature inputs ---
+
 feature_names = []
 feature_descs = []
 
@@ -60,7 +60,7 @@ if st.button("Evaluate Product"):
         summary = history_df.groupby(['Product','Severity']).size().unstack(fill_value=0)
         st.dataframe(summary)
 
-        # --- Executive view: Top N High-Risk Features ---
+
         st.subheader("🧾 Executive View - Top High-Risk Features")
         top_high = history_df[history_df['Severity']=='High'].sort_values(by='Product')
         if top_high.empty:
