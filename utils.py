@@ -6,7 +6,7 @@ import os
 
 HISTORY_FILE = "history.csv"
 
-# Load or initialize history CSV
+
 def load_history():
     if os.path.exists(HISTORY_FILE):
         return pd.read_csv(HISTORY_FILE)
